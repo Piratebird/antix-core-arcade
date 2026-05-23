@@ -1,0 +1,13 @@
+#!/bin/bash
+#export XDG_RUNTIME_DIR=/run/user/1000
+#export DISPLAY=:0
+#retroarch &
+
+# setting a wallpaper
+hsetroot -fill /home/piratebird/wallpaper.png &
+
+xset s off
+xset -dpms
+xset s noblank
+
+retroarch &

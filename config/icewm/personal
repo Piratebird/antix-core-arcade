@@ -1,0 +1,2 @@
+prog "Task Manager (htop)" - lxterminal -e htop
+prog "LXTerminal" - lxterminal

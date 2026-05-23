@@ -1,0 +1,25 @@
+prog "App Select" /usr/share/icons/Qogir/scalable/apps/gnome-searchtool.png /usr/local/bin/app-select
+prog "Terminal" /usr/share/icons/Qogir/scalable/apps/terminal.png lxterminal
+prog "File Manager" /usr/share/icons/Qogir/48/apps/file-manager.png pcmanfm
+prog "Web Browser" /usr/share/icons/Qogir/scalable/apps/web-browser.png firefox-esr
+prog "RetroArch" /usr/share/pixmaps/retroarch.svg retroarch
+prog "Editor" /usr/share/icons/Qogir/scalable/apps/leafpad.png geany
+separator
+menufile "Applications (antiX)" /usr/share/icons/Qogir/scalable/apps/applications-all.png menu-applications
+menufile "Applications (Debian)" /usr/share/icons/Qogir/scalable/apps/applications-all.png programs
+prog "Refresh Menu" /usr/share/icons/Qogir/scalable/apps/reload.png desktop-menu --write-out-global
+separator
+menufile "Personal" /usr/share/icons/Qogir/scalable/places/user-identity.png personal
+menuprog "Recent Files" /usr/share/icons/Qogir/48/places/folder-recent.png /usr/local/bin/icewm-menu-recentfiles.sh
+separator
+menu "Desktop" /usr/share/icons/Qogir/48/places/user-desktop.png {
+    menufile "Other Desktops" /usr/share/icons/Qogir/48/places/user-desktop.png /usr/share/desktop-session/wm-menus/icewm-wm-menu
+    separator
+    menuprog "Desktop Folder" /usr/share/icons/Qogir/48/places/desktop.png /usr/local/bin/icewm-menu-Desktop.sh
+    separator
+    prog "RoxPanel on/off" /usr/share/icons/Qogir/48/places/folder_color_default.png paneltoggle.sh
+    prog "Conky on/off" /usr/share/icons/Qogir/48/places/folder_color_default.png conkytoggle.sh
+}
+separator
+prog "App Killer" /usr/share/icons/Qogir/scalable/apps/offgame.png xkill
+prog "Control Centre" /usr/share/icons/Qogir/scalable/apps/control-center2.png antixcc.sh

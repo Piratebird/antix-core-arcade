@@ -1,0 +1,14 @@
+
+menu "Applications" folder {
+menu "Shells" folder {
+  prog "Bash" -  xterm -T "Bash" -e /bin/bash --login
+  prog "Dash" -  xterm -T "Dash" -e /bin/dash -i
+  prog "Sh" -  xterm -T "Sh" -e /bin/sh --login
+}
+menu "Terminal Emulators" folder {
+  prog "X-Terminal as root (gksu)" /usr/share/pixmaps/gksu.xpm /usr/bin/gksu -u root /usr/bin/x-terminal-emulator
+}
+}
+menu "Window Managers" folder {
+  restart "IceWM" /usr/share/icewm/icons/icewm_16x16.xpm /usr/bin/icewm
+}
